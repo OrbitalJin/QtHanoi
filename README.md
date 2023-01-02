@@ -77,5 +77,5 @@ void paintEvent(QPaintEvent*);
 
 
 # Known Issues
-> None so far
++ Unlock controls on Reset
 
