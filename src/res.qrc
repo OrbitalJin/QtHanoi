@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>assets/audio/Lift.wav</file>
+        <file>assets/imgs/TowerOfHanoi.png</file>
+        <file>assets/audio/BadMove.wav</file>
+        <file>assets/audio/Place.wav</file>
+    </qresource>
+</RCC>
