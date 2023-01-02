@@ -14,7 +14,7 @@ This implementation exposes two main interfaces. A `Game` interface which provid
 </p>
 
 # Pole Header
-`Pole` QObject
+`Pole` QWidget
 ```c++
 void initDisks(int);
 Disk* popTop();
@@ -25,7 +25,7 @@ void paintEvent(QPaintEvent*);
 ```
 
 # Disk Header
-`Disk` QObject
+`Disk` QWidget
 ```c++
 void Lift();
 void setPolePos(Pole* d, int p);
@@ -42,7 +42,7 @@ int targetPole();
 ```
 
 # Hanoi Header
-Main App
+`Hanoi` Class
 ```c++
 // Private Members
 void initPoles();
