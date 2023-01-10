@@ -1,29 +1,33 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2022-20-12T07:52:32
-#
-#-------------------------------------------------
+QT      += core gui multimedia
 
-#greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-QMAKE_CXXFLAGS += "-fno-sized-deallocation"
-QMAKE_CXXFLAGS += "-std=c++11"
+CONFIG  += c++11
 
-QT      += core gui multimedia widgets
-TARGET   = TowerOfHanoi
-TEMPLATE = app
+SOURCES += \
+    main.cpp \
+    hanoi.cpp \
+    disk.cpp \
+    pole.cpp \
+    move.cpp \
 
-SOURCES += main.cpp  \
-           hanoi.cpp \
-           pole.cpp  \
-           disk.cpp  \
-           move.cpp
 
-HEADERS  += hanoi.h  \
-            pole.h   \
-            disk.h   \
-            move.h
+HEADERS += \
+    hanoi.h \
+    disk.h \
+    pole.h \
+    move.h \
 
-FORMS    += hanoi.ui
+FORMS += \
+    hanoi.ui
 
-RESOURCES+= res.qrc
+RESOURCES += \
+    res.qrc
+
+# Default rules for deployment.
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+
+RC_ICONS   += assets/icon.ico
+

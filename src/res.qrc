@@ -4,5 +4,6 @@
         <file>assets/imgs/TowerOfHanoi.png</file>
         <file>assets/audio/BadMove.wav</file>
         <file>assets/audio/Place.wav</file>
+        <file>assets/icon.ico</file>
     </qresource>
 </RCC>

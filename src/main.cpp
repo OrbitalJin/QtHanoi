@@ -3,6 +3,7 @@
 // Author: Ouzaher Saad
 
 #include <QApplication>
+
 #include "hanoi.h"
 
 // Entry Point

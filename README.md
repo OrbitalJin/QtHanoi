@@ -77,7 +77,10 @@ void paintEvent(QPaintEvent*);
 
 
 # Known Issues
-+ Unlock controls on Reset
-+ No sound on some systems
-+ Disable horizontal scrollbar on stepsViewer
+> None so far
+
+# Fixed Issues
+- [X] Unlock controls on Reset
+- [X] No sound on some systems
+- [X] Disable horizontal scrollbar on stepsViewer
 

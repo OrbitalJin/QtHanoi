@@ -29,6 +29,8 @@ void Hanoi::adjustUi(){
     this->setWindowIcon(appIcon);
     this->setWindowFlags(Qt::WindowType::FramelessWindowHint);
 
+    this->ui->stepsViewer->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
     this->ui->spinBox->setMaximum(MAX_DISKS);
     this->ui->spinBox->setValue(MAX_DISKS);
     this->ui->spinBox->setSuffix(" Disk(s).");
@@ -95,6 +97,7 @@ void Hanoi::resetGame(){
     this->ui->stepsViewer->clear();
 
     this->toggleControls(true);
+    this->toggleSettings(true);
     this->eventScheduler->stop();
 
     this->history.clear();
